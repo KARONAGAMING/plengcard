@@ -12,6 +12,8 @@ canvas.GlobalFonts.registerFromPath(`node_modules/musicard/build/structures/font
 canvas.GlobalFonts.registerFromPath(`node_modules/musicard/build/structures/font/notosans-black.ttf`, "noto-sans");
 canvas.GlobalFonts.registerFromPath(`node_modules/musicard/build/structures/font/notoemoji-bold.ttf`, "noto-emoji");
 canvas.GlobalFonts.registerFromPath(`node_modules/musicard/build/structures/font/notosans-kr-black.ttf`, "noto-sans-kr");
+canvas.GlobalFonts.registerFromPath(`node_modules/musicard/build/structures/font/notosans-kh.ttf`, "noto-sans-kh");
+canvas.GlobalFonts.registerFromPath(`node_modules/musicard/build/structures/font/battambang-blod.ttf`, "battambang");
 
 class plengcard {
     constructor(options) {
@@ -184,11 +186,11 @@ class plengcard {
             ctx.drawImage(background, 0, 0, 1280, 450);
 
             ctx.fillStyle = `#${validatedColor}`;
-            ctx.font = `75px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr`;
+            ctx.font = `75px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, battambang`;
             ctx.fillText(this.name, 70, 120);
 
             ctx.fillStyle = '#b8b8b8';
-            ctx.font = `50px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr`;
+            ctx.font = `50px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, battambang`;
             ctx.fillText(this.author, 75, 190);
 
             ctx.fillStyle = '#fff';
@@ -251,11 +253,11 @@ class plengcard {
             ctx.drawImage(thumbnailCanvas, 75, 60, 650, 650);
             ctx.restore();
 
-            ctx.font = "bold 150px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+            ctx.font = "bold 150px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, battambang";
             ctx.fillStyle = `#${validatedColor}`;
             ctx.fillText(this.name, 800, 350);
 
-            ctx.font = "bold 100px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+            ctx.font = "bold 100px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, battambang";
             ctx.fillStyle = "#787878";
             ctx.fillText(this.author, 800, 500);
 
