@@ -284,4 +284,4 @@ class plengcard {
     }
 }
 
-module.exports = { musicCard };
+module.exports = { plengcard };
