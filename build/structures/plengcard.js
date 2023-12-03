@@ -147,15 +147,18 @@ class plengcard {
 
             let thumbnailImage;
 
-            thumbnailImage = await canvas.loadImage(this.thumbnail, {
-                requestOptions: {
-                    headers: {
-                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+            try {
+                thumbnailImage = await canvas.loadImage(this.thumbnail, {
+                    requestOptions: {
+                        headers: {
+                            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+                        }
                     }
-                }
-            }).catch(() => {
-                thumbnailImage = canvas.loadImage(`https://cdn.discordapp.com/attachments/1097365127566725120/1179312364278001674/maxresdefault.png`);
-            })
+                });
+            } catch (error) {
+                console.error("Error loading thumbnail:");
+                thumbnailImage = await canvas.loadImage(`https://cdn.discordapp.com/attachments/1097365127566725120/1179312364278001674/maxresdefault.png`);
+            }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
             const thumbnailX = (thumbnailImage.width - thumbnailSize) / 2;
@@ -212,15 +215,18 @@ class plengcard {
 
             let thumbnailImage;
 
-            thumbnailImage = await canvas.loadImage(this.thumbnail, {
-                requestOptions: {
-                    headers: {
-                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+            try {
+                thumbnailImage = await canvas.loadImage(this.thumbnail, {
+                    requestOptions: {
+                        headers: {
+                            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+                        }
                     }
-                }
-            }).catch(() => {
-                thumbnailImage = canvas.loadImage(`https://cdn.discordapp.com/attachments/1097365127566725120/1179312364278001674/maxresdefault.png`);
-            })
+                });
+            } catch (error) {
+                console.error("Error loading thumbnail:");
+                thumbnailImage = await canvas.loadImage(`https://cdn.discordapp.com/attachments/1097365127566725120/1179312364278001674/maxresdefault.png`);
+            }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
             const thumbnailX = (thumbnailImage.width - thumbnailSize) / 2;
