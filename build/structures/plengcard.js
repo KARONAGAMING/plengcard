@@ -13,7 +13,7 @@ canvas.GlobalFonts.registerFromPath(`node_modules/musicard/build/structures/font
 canvas.GlobalFonts.registerFromPath(`node_modules/musicard/build/structures/font/notoemoji-bold.ttf`, "noto-emoji");
 canvas.GlobalFonts.registerFromPath(`node_modules/musicard/build/structures/font/notosans-kr-black.ttf`, "noto-sans-kr");
 
-class musicCard {
+class plengcard {
     constructor(options) {
         this.name = options?.name ?? null;
         this.author = options?.author ?? null;
