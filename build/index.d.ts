@@ -1,4 +1,4 @@
-export declare class musicCard {
+export declare class plengcard {
   constructor(options?: {
     name?: string;
     author?: string;
