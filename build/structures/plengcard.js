@@ -7,13 +7,13 @@ const { colorFetch } = require("../functions/colorFetch");
 // canvas.GlobalFonts.registerFromPath(`build/structures/font/notoemoji-bold.ttf`, "noto-emoji");
 // canvas.GlobalFonts.registerFromPath(`build/structures/font/notosans-kr-black.ttf`, "noto-sans-kr");
 
-canvas.GlobalFonts.registerFromPath(`node_modules/musicard/build/structures/font/circularstd-black.otf`, "circular-std");
-canvas.GlobalFonts.registerFromPath(`node_modules/musicard/build/structures/font/notosans-jp-black.ttf`, "noto-sans-jp");
-canvas.GlobalFonts.registerFromPath(`node_modules/musicard/build/structures/font/notosans-black.ttf`, "noto-sans");
-canvas.GlobalFonts.registerFromPath(`node_modules/musicard/build/structures/font/notoemoji-bold.ttf`, "noto-emoji");
-canvas.GlobalFonts.registerFromPath(`node_modules/musicard/build/structures/font/notosans-kr-black.ttf`, "noto-sans-kr");
-canvas.GlobalFonts.registerFromPath(`node_modules/musicard/build/structures/font/notosans-kh.ttf`, "noto-sans-kh");
-canvas.GlobalFonts.registerFromPath(`node_modules/musicard/build/structures/font/battambang-blod.ttf`, "battambang");
+canvas.GlobalFonts.registerFromPath(`build/structures/font/circularstd-black.otf`, "circular-std");
+canvas.GlobalFonts.registerFromPath(`build/structures/font/notosans-jp-black.ttf`, "noto-sans-jp");
+canvas.GlobalFonts.registerFromPath(`build/structures/font/notosans-black.ttf`, "noto-sans");
+canvas.GlobalFonts.registerFromPath(`build/structures/font/notoemoji-bold.ttf`, "noto-emoji");
+canvas.GlobalFonts.registerFromPath(`build/structures/font/notosans-kr-black.ttf`, "noto-sans-kr");
+canvas.GlobalFonts.registerFromPath(`build/structures/font/notosans-kh.ttf`, "noto-sans-kh");
+canvas.GlobalFonts.registerFromPath(`build/structures/font/battambang-blod.ttf`, "battambang");
 
 class plengcard {
     constructor(options) {
