@@ -156,7 +156,7 @@ class plengcard {
                     }
                 });
             } catch (error) {
-                console.error("Error loading thumbnail:");
+                console.error("[ERR] Error loading thumbnail");
                 thumbnailImage = await canvas.loadImage(`https://cdn.discordapp.com/attachments/1097365127566725120/1179312364278001674/maxresdefault.png`);
             }
 
@@ -224,7 +224,7 @@ class plengcard {
                     }
                 });
             } catch (error) {
-                console.error("Error loading thumbnail:");
+                console.error("[ERR] Error loading thumbnail");
                 thumbnailImage = await canvas.loadImage(`https://cdn.discordapp.com/attachments/1097365127566725120/1179312364278001674/maxresdefault.png`);
             }
 
