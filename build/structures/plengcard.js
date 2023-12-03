@@ -186,11 +186,11 @@ class plengcard {
             ctx.drawImage(background, 0, 0, 1280, 450);
 
             ctx.fillStyle = `#${validatedColor}`;
-            ctx.font = `75px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, battambang`;
+            ctx.font = `75px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, noto-sans-kh`;
             ctx.fillText(this.name, 70, 120);
 
             ctx.fillStyle = '#b8b8b8';
-            ctx.font = `50px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, battambang`;
+            ctx.font = `50px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, noto-sans-kh`;
             ctx.fillText(this.author, 75, 190);
 
             ctx.fillStyle = '#fff';
@@ -253,11 +253,11 @@ class plengcard {
             ctx.drawImage(thumbnailCanvas, 75, 60, 650, 650);
             ctx.restore();
 
-            ctx.font = "bold 150px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, battambang";
+            ctx.font = "bold 150px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, noto-sans-kh";
             ctx.fillStyle = `#${validatedColor}`;
             ctx.fillText(this.name, 800, 350);
 
-            ctx.font = "bold 100px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, battambang";
+            ctx.font = "bold 100px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, noto-sans-kh";
             ctx.fillStyle = "#787878";
             ctx.fillText(this.author, 800, 500);
 
