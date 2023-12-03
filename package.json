@@ -1,5 +1,5 @@
 {
-  "name": "musicard",
+  "name": "plengcard",
   "version": "1.5.0",
   "description": "Experience your Discord bot's music in a visual format.",
   "main": "build/index.js",
