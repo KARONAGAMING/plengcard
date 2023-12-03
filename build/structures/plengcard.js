@@ -219,7 +219,7 @@ class plengcard {
                     }
                 }
             }).catch(() => {
-                thumbnailImage = canvas.loadImage(`https://s6.imgcdn.dev/Opo4a.jpg`);
+                thumbnailImage = canvas.loadImage(`https://cdn.discordapp.com/attachments/1097365127566725120/1179312364278001674/maxresdefault.png`);
             })
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
