@@ -7,8 +7,9 @@ canvas.GlobalFonts.registerFromPath(`node_modules/plengcard/build/structures/fon
 canvas.GlobalFonts.registerFromPath(`node_modules/plengcard/build/structures/font/notoemoji-bold.ttf`, "noto-emoji");
 canvas.GlobalFonts.registerFromPath(`node_modules/plengcard/build/structures/font/notosans-kr-black.ttf`, "noto-sans-kr");
 canvas.GlobalFonts.registerFromPath(`node_modules/plengcard/build/structures/font/notosans-kh.ttf`, "noto-sans-kh");
-canvas.GlobalFonts.registerFromPath(`node_modules/plengcard/build/structures/font/notosans-kh-bold.ttf`, "noto-sans-kh-bold");
+canvas.GlobalFonts.registerFromPath(`node_modules/plengcard/build/structures/font/NotoSansKhmer-ExtraBold.ttf`, "noto-sans-kh-bold");
 canvas.GlobalFonts.registerFromPath(`node_modules/plengcard/build/structures/font/battambang-blod.ttf`, "battambang");
+canvas.GlobalFonts.registerFromPath(`node_modules/plengcard/build/structures/font/Siemreap-Regular.ttf`, "siemreap");
 
 class plengcard {
     constructor(options) {
@@ -184,12 +185,12 @@ class plengcard {
             ctx.drawImage(background, 0, 0, 1280, 450);
 
             ctx.fillStyle = `#${validatedColor}`;
-            ctx.font = `50px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, noto-sans-kh`;
+            ctx.font = `50px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, noto-sans-kh-bold`;
             ctx.fillText(this.name, 225, 120);
 
-            ctx.fillStyle = '#6730BA';
-            ctx.font = `30px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, noto-sans-kh`;
-            ctx.fillText(this.author, 230, 150);
+            ctx.fillStyle = `#${validatedColor}`;
+            ctx.font = `30px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, noto-sans-kh-bold`;
+            ctx.fillText(this.author, 230, 160);
 
             ctx.fillStyle = `#${validatedColor}`;
             ctx.font = '30px circular-std';
