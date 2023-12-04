@@ -7,6 +7,7 @@ canvas.GlobalFonts.registerFromPath(`node_modules/plengcard/build/structures/fon
 canvas.GlobalFonts.registerFromPath(`node_modules/plengcard/build/structures/font/notoemoji-bold.ttf`, "noto-emoji");
 canvas.GlobalFonts.registerFromPath(`node_modules/plengcard/build/structures/font/notosans-kr-black.ttf`, "noto-sans-kr");
 canvas.GlobalFonts.registerFromPath(`node_modules/plengcard/build/structures/font/notosans-kh.ttf`, "noto-sans-kh");
+canvas.GlobalFonts.registerFromPath(`node_modules/plengcard/build/structures/font/notosans-kh-bold.ttf`, "noto-sans-kh-bold");
 canvas.GlobalFonts.registerFromPath(`node_modules/plengcard/build/structures/font/battambang-blod.ttf`, "battambang");
 
 class plengcard {
@@ -140,7 +141,7 @@ class plengcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://s6.imgcdn.dev/ZDjTD.png`);
+            const background = await canvas.loadImage(`https://media.discordapp.net/attachments/1150420975360426024/1181246715853025360/Ryuuki-canvas.png`);
 
             const thumbnailCanvas = canvas.createCanvas(564, 564);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -183,24 +184,21 @@ class plengcard {
             ctx.drawImage(background, 0, 0, 1280, 450);
 
             ctx.fillStyle = `#${validatedColor}`;
-            ctx.font = `75px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, noto-sans-kh`;
-            ctx.fillText(this.name, 70, 120);
-
-            ctx.fillStyle = '#b8b8b8';
             ctx.font = `50px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, noto-sans-kh`;
-            ctx.fillText(this.author, 75, 190);
+            ctx.fillText(this.name, 225, 120);
 
-            ctx.fillStyle = '#fff';
-            ctx.font = '30px circular-std';
-            ctx.fillText(validatedStartTime, 70, 410);
+            ctx.fillStyle = '#6730BA';
+            ctx.font = `30px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, noto-sans-kh`;
+            ctx.fillText(this.author, 230, 150);
 
-            ctx.fillStyle = '#fff';
+            ctx.fillStyle = `#${validatedColor}`;
             ctx.font = '30px circular-std';
-            ctx.fillText(validatedEndTime, 680, 410);
+            ctx.fillText(validatedEndTime, 663, 361);
 
             ctx.drawImage(thumbnailCanvas, 837, 8, 435, 435);
-            ctx.drawImage(progressBarCanvas, 70, 340, 670, 25);
-            ctx.drawImage(circleCanvas, 10, 255, 1000, 1000);
+            ctx.drawImage(thumbnailCanvas, 40, 45 , 165, 165);
+            ctx.drawImage(progressBarCanvas, 70, 300, 670, 25);
+            ctx.drawImage(circleCanvas, 10, 215, 1000, 1000);
 
             return image.toBuffer('image/png');
         } else if (this.theme == 'dynamic') {
