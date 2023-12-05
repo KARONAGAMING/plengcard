@@ -142,7 +142,7 @@ class plengcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://media.discordapp.net/attachments/1150420975360426024/1181246715853025360/Ryuuki-canvas.png`);
+            const background = await canvas.loadImage(`https://media.discordapp.net/attachments/980689967791628348/1181263330183221379/bannermusicc.png`);
 
             const thumbnailCanvas = canvas.createCanvas(564, 564);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
