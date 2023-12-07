@@ -142,7 +142,7 @@ class plengcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://media.discordapp.net/attachments/980689967791628348/1181263330183221379/bannermusicc.png`);
+            const background = await canvas.loadImage(`https://media.discordapp.net/attachments/980689967791628348/1182186285398495232/pleng.png`);
 
             const thumbnailCanvas = canvas.createCanvas(564, 564);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -184,11 +184,11 @@ class plengcard {
 
             ctx.drawImage(background, 0, 0, 1280, 450);
 
-            ctx.fillStyle = `#${validatedColor}`;
+            ctx.fillStyle = `#FFFFFF`;
             ctx.font = `50px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, noto-sans-kh-bold`;
             ctx.fillText(this.name, 225, 120);
 
-            ctx.fillStyle = `#${validatedColor}`;
+            ctx.fillStyle = `#$FFFFFF`;
             ctx.font = `30px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, noto-sans-kh-bold`;
             ctx.fillText(this.author, 230, 160);
 
