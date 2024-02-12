@@ -184,11 +184,11 @@ class plengcard {
 
             ctx.drawImage(background, 0, 0, 1280, 450);
 
-            ctx.fillStyle = `#FFFFFF`;
+            ctx.fillStyle = `#${validatedColor}`;
             ctx.font = `50px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, noto-sans-kh-bold`;
             ctx.fillText(this.name, 225, 120);
 
-            ctx.fillStyle = `#$FFFFFF`;
+            ctx.fillStyle = `#${validatedColor}`;
             ctx.font = `30px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, noto-sans-kh-bold`;
             ctx.fillText(this.author, 230, 160);
 
