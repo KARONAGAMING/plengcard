@@ -109,33 +109,33 @@ class plengcard {
             progressBarCtx.moveTo(cornerRadius, 0);
             progressBarCtx.lineTo(670 - cornerRadius, 0);
             progressBarCtx.arc(670 - cornerRadius, cornerRadius, cornerRadius, 1.5 * Math.PI, 2 * Math.PI);
-            progressBarCtx.lineTo(670, 25 - cornerRadius);
-            progressBarCtx.arc(670 - cornerRadius, 25 - cornerRadius, cornerRadius, 0, 0.5 * Math.PI);
-            progressBarCtx.lineTo(cornerRadius, 25);
-            progressBarCtx.arc(cornerRadius, 25 - cornerRadius, cornerRadius, 0.5 * Math.PI, Math.PI);
+            progressBarCtx.lineTo(670, 14 - cornerRadius);
+            progressBarCtx.arc(670 - cornerRadius, 14 - cornerRadius, cornerRadius, 0, 0.5 * Math.PI);
+            progressBarCtx.lineTo(cornerRadius, 14);
+            progressBarCtx.arc(cornerRadius, 14 - cornerRadius, cornerRadius, 0.5 * Math.PI, Math.PI);
             progressBarCtx.lineTo(0, cornerRadius);
             progressBarCtx.arc(cornerRadius, cornerRadius, cornerRadius, Math.PI, 1.5 * Math.PI);
             progressBarCtx.closePath();
-            progressBarCtx.fillStyle = '#ababab';
+            progressBarCtx.fillStyle = `rgba(${hexToRgb("#ababab")}, 0.7)`;
             progressBarCtx.fill();
             progressBarCtx.beginPath();
             progressBarCtx.moveTo(cornerRadius, 0);
             progressBarCtx.lineTo(progressBarWidth - cornerRadius, 0);
             progressBarCtx.arc(progressBarWidth - cornerRadius, cornerRadius, cornerRadius, 1.5 * Math.PI, 2 * Math.PI);
-            progressBarCtx.lineTo(progressBarWidth, 25);
-            progressBarCtx.lineTo(cornerRadius, 25);
-            progressBarCtx.arc(cornerRadius, 25 - cornerRadius, cornerRadius, 0.5 * Math.PI, Math.PI);
+            progressBarCtx.lineTo(progressBarWidth, 14);
+            progressBarCtx.lineTo(cornerRadius, 14);
+            progressBarCtx.arc(cornerRadius, 14 - cornerRadius, cornerRadius, 0.5 * Math.PI, Math.PI);
             progressBarCtx.lineTo(0, cornerRadius);
             progressBarCtx.arc(cornerRadius, cornerRadius, cornerRadius, Math.PI, 1.5 * Math.PI);
             progressBarCtx.closePath();
-            progressBarCtx.fillStyle = `#${validatedColor}`;
+            progressBarCtx.fillStyle = `#${validatedColor}, 0.7`;
             progressBarCtx.fill();
 
             const circleCanvas = canvas.createCanvas(1000, 1000);
             const circleCtx = circleCanvas.getContext('2d');
 
-            const circleRadius = 20;
-            const circleY = 97;
+            const circleRadius = 17;
+            const circleY = 150;
 
             circleCtx.beginPath();
             circleCtx.arc(circleX, circleY, circleRadius, 0, 2 * Math.PI);
@@ -281,6 +281,14 @@ class plengcard {
             throw new Error('Invalid theme parameter, must be "classic" or "dynamic"');
         }
     }
+}
+function hexToRgb(hex) {
+    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result ? [
+        parseInt(result[1], 16),
+        parseInt(result[2], 16),
+        parseInt(result[3], 16)
+    ] : null;
 }
 
 module.exports = { plengcard };
