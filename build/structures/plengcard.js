@@ -135,7 +135,7 @@ class plengcard {
             const circleCtx = circleCanvas.getContext('2d');
 
             const circleRadius = 17;
-            const circleY = 150;
+            const circleY = 90;
 
             circleCtx.beginPath();
             circleCtx.arc(circleX, circleY, circleRadius, 0, 2 * Math.PI);
@@ -194,7 +194,7 @@ class plengcard {
 
             ctx.fillStyle = `#${validatedColor}`;
             ctx.font = '30px circular-std';
-            ctx.fillText(validatedEndTime, 663, 361);
+            ctx.fillText(validatedEndTime, 663, 350);
 
             ctx.drawImage(thumbnailCanvas, 837, 8, 435, 435);
             ctx.drawImage(thumbnailCanvas, 40, 45 , 165, 165);
