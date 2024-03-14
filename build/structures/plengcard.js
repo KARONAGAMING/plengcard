@@ -142,7 +142,7 @@ class plengcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://media.discordapp.net/attachments/1193048344822566995/1206548639305170974/plengbanner-khmernewyear.png?ex=65eeddfc&is=65dc68fc&hm=29b1bfb7a4b2e964f1774bc840125b1c0ffbee6af0f7c1a8a4e6a813379adfbe`);
+            const background = await canvas.loadImage(`https://media.discordapp.net/attachments/1193048344822566995/1206548639305170974/plengbanner-khmernewyear.png?ex=660152fc&is=65eeddfc&hm=07b4126c2fddbdf9193820e61102472e129854c18df9741311fb8bccd8dde005`);
 
             const thumbnailCanvas = canvas.createCanvas(564, 564);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
