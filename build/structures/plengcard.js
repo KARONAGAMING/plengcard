@@ -159,7 +159,7 @@ class plengcard {
                 });
             } catch (error) {
                 console.error("[ERR] Error loading thumbnail");
-                thumbnailImage = await canvas.loadImage(`https://media.discordapp.net/attachments/1193048344822566995/1215267822779764778/offtheair-no-signal-video-error.jpg?ex=65fc215b&is=65e9ac5b&hm=02a9cf0a5d1f68ff40c4a660bb4c56fe2e0c9d3f1385fd147f10c026f496786b`);
+                thumbnailImage = await canvas.loadImage(`https://cdn.discordapp.com/attachments/1193048344822566995/1215267822779764778/offtheair-no-signal-video-error.jpg?ex=66055bdb&is=65f2e6db&hm=183010c5c1a723851d92a6f992ffef2bc0afab2daee7af2094cf2116be3bd03a`);
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
