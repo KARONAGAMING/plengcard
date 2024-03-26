@@ -142,7 +142,7 @@ class plengcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://media.discordapp.net/attachments/1193048344822566995/1206548639305170974/plengbanner-khmernewyear.png?ex=660152fc&is=65eeddfc&hm=07b4126c2fddbdf9193820e61102472e129854c18df9741311fb8bccd8dde005`);
+            const background = await canvas.loadImage(`https://i.imgur.com/MCweIte.png`);
 
             const thumbnailCanvas = canvas.createCanvas(564, 564);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -159,7 +159,7 @@ class plengcard {
                 });
             } catch (error) {
                 console.error("[ERR] Error loading thumbnail");
-                thumbnailImage = await canvas.loadImage(`https://cdn.discordapp.com/attachments/1193048344822566995/1215267822779764778/offtheair-no-signal-video-error.jpg?ex=66055bdb&is=65f2e6db&hm=183010c5c1a723851d92a6f992ffef2bc0afab2daee7af2094cf2116be3bd03a`);
+                thumbnailImage = await canvas.loadImage(`https://i.imgur.com/v6Owywy.jpeg`);
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
