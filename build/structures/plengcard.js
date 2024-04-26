@@ -142,7 +142,7 @@ class plengcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://i.imgur.com/g11dUsT.png`);
+            const background = await canvas.loadImage(`https://i.imgur.com/Wllfjfr.png`);
 
             const thumbnailCanvas = canvas.createCanvas(564, 564);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -186,20 +186,20 @@ class plengcard {
 
             ctx.fillStyle = `#${validatedColor}`;
             ctx.font = `50px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, noto-sans-kh-bold`;
-            ctx.fillText(this.name, 225, 120);
+            ctx.fillText(this.name, 225, 108);
 
             ctx.fillStyle = `#${validatedColor}`;
             ctx.font = `30px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, noto-sans-kh-bold`;
-            ctx.fillText(this.author, 230, 160);
+            ctx.fillText(this.author, 230, 148);
 
             ctx.fillStyle = `#${validatedColor}`;
             ctx.font = '30px circular-std';
-            ctx.fillText(validatedEndTime, 663, 350);
+            ctx.fillText(validatedEndTime, 673, 350);
 
-            ctx.drawImage(thumbnailCanvas, 837, 8, 435, 435);
-            ctx.drawImage(thumbnailCanvas, 40, 45 , 165, 165);
-            ctx.drawImage(progressBarCanvas, 70, 300, 670, 25);
-            ctx.drawImage(circleCanvas, 10, 215, 1000, 1000);
+            ctx.drawImage(thumbnailCanvas, 839, 8, 435, 435);
+            ctx.drawImage(thumbnailCanvas, 50, 33 , 165, 165);
+            ctx.drawImage(progressBarCanvas, 80, 300, 670, 25);
+            ctx.drawImage(circleCanvas, 20, 215, 1000, 1000);
 
             return image.toBuffer('image/png');
         } else if (this.theme == 'dynamic') {
