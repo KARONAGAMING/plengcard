@@ -142,7 +142,7 @@ class plengcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://i.imgur.com/KEuKMvt.png`);
+            const background = await canvas.loadImage(`https://i.imgur.com/eSv1cnL.png`);
 
             const thumbnailCanvas = canvas.createCanvas(564, 564);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -184,17 +184,35 @@ class plengcard {
 
             ctx.drawImage(background, 0, 0, 1280, 450);
 
-            ctx.fillStyle = `#${validatedColor}`;
+            ctx.fillStyle = `#fff`;
+            ctx.strokeStyle = `#${validatedColor}`;
+            ctx.lineWidth = 6;
             ctx.font = `50px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, noto-sans-kh-bold`;
+            ctx.shadowColor = "rgba(0, 0, 0, 0.8)";
+            ctx.shadowBlur = 7;
+            ctx.shadowOffsetX = -3;
+            ctx.shadowOffsetY = 3;
+            ctx.strokeText(this.name, 225, 108);
             ctx.fillText(this.name, 225, 108);
 
-            ctx.fillStyle = `#${validatedColor}`;
+            ctx.fillStyle = `#fff`;
+            ctx.strokeStyle = `#${validatedColor}`;
+            ctx.lineWidth = 6;
             ctx.font = `30px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr, noto-sans-kh-bold`;
+            ctx.strokeText(this.author, 230, 148);
             ctx.fillText(this.author, 230, 148);
 
-            ctx.fillStyle = `#${validatedColor}`;
+            ctx.fillStyle = `#fff`;
+            ctx.strokeStyle = `#${validatedColor}`;
+            ctx.lineWidth = 6;
             ctx.font = '30px circular-std';
+            ctx.strokeText(validatedEndTime, 673, 350);
             ctx.fillText(validatedEndTime, 673, 350);
+
+            ctx.shadowColor = "transparent";
+            ctx.shadowBlur = 0;
+            ctx.shadowOffsetX = 0;
+            ctx.shadowOffsetY = 0;
 
             ctx.drawImage(thumbnailCanvas, 839, 8, 435, 435);
             ctx.drawImage(thumbnailCanvas, 50, 33 , 165, 165);
