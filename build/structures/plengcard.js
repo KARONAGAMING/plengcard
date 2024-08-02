@@ -142,7 +142,7 @@ class plengcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://imgur.com/KEuKMvt`);
+            const background = await canvas.loadImage(`https://i.imgur.com/KEuKMvt.png`);
 
             const thumbnailCanvas = canvas.createCanvas(564, 564);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
