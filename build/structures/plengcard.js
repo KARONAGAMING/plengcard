@@ -142,7 +142,7 @@ class plengcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://i.imgur.com/eSv1cnL.png`);
+            const background = await canvas.loadImage(`http://64.20.36.18:21588/uploads/1112120083/banner.png`);
 
             const thumbnailCanvas = canvas.createCanvas(564, 564);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -209,6 +209,9 @@ class plengcard {
             ctx.strokeText(validatedEndTime, 673, 350);
             ctx.fillText(validatedEndTime, 673, 350);
 
+            ctx.drawImage(progressBarCanvas, 80, 300, 670, 25);
+            ctx.drawImage(circleCanvas, 20, 215, 1000, 1000);
+
             ctx.shadowColor = "transparent";
             ctx.shadowBlur = 0;
             ctx.shadowOffsetX = 0;
@@ -216,8 +219,7 @@ class plengcard {
 
             ctx.drawImage(thumbnailCanvas, 839, 8, 435, 435);
             ctx.drawImage(thumbnailCanvas, 50, 33 , 165, 165);
-            ctx.drawImage(progressBarCanvas, 80, 300, 670, 25);
-            ctx.drawImage(circleCanvas, 20, 215, 1000, 1000);
+
 
             return image.toBuffer('image/png');
         } else if (this.theme == 'dynamic') {
